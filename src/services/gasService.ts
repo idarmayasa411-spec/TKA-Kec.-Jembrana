@@ -19,7 +19,8 @@ export const gasService = {
         // Jika URL tersimpan adalah URL versi lama, perbarui ke URL aktif
         if (
           custom.includes('AKfycbzBuJrheUE3MRAvNlUEZut3q0LQL5-J62sy8w_rfsBz72VJGt7IHyFPj0WORSB8dUCmeQ') ||
-          custom.includes('AKfycbx6Bki20asJdxZX-I6kmXwGIyd6pOApUMTD-92t7rFVdIuYH86ApVatKYEsBbZYttJSng')
+          custom.includes('AKfycbx6Bki20asJdxZX-I6kmXwGIyd6pOApUMTD-92t7rFVdIuYH86ApVatKYEsBbZYttJSng') ||
+          custom.includes('AKfycbyyXYw7ULiFr3BSyp_OC3ug0jrRCFUWeNWSl3L5_LKZGjhmLcktC3g7-r761xx1Jewy')
         ) {
           localStorage.removeItem(STORAGE_CUSTOM_GAS_URL_KEY);
           return CONFIG.GOOGLE_APPS_SCRIPT_URL;
